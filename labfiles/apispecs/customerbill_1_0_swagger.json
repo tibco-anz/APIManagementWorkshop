@@ -1,0 +1,134 @@
+{
+	"definitions": {
+		"GetCustomerResponse": {
+			"properties": {
+				"account": {
+					"properties": {
+						"id": {
+							"default": "A0815",
+							"type": "string"
+						},
+						"name": {
+							"default": "Prepaid Account",
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"amountDue": {
+					"properties": {
+						"unit": {
+							"default": "AUD",
+							"type": "string"
+						},
+						"value": {
+							"default": 20.95,
+							"type": "number"
+						}
+					},
+					"type": "object"
+				},
+				"billCycle": {
+					"properties": {
+						"id": {
+							"default": "BC-1234",
+							"type": "string"
+						},
+						"referredType": {
+							"default": "BillCycle",
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"billDate": {
+					"default": "2020-01-05T12:00:56.982Z",
+					"format": "date-time",
+					"type": "string"
+				},
+				"id": {
+					"default": "780123456",
+					"type": "string"
+				},
+				"paymentDueDate": {
+					"default": "2020-01-15T00:00:00.000Z",
+					"format": "date-time",
+					"type": "string"
+				},
+				"remainingAmount": {
+					"properties": {
+						"unit": {
+							"default": "AUD",
+							"type": "string"
+						},
+						"value": {
+							"default": 20.95,
+							"type": "number"
+						}
+					},
+					"type": "object"
+				},
+				"type": {
+					"default": "CustomerBill",
+					"type": "string"
+				}
+			},
+			"type": "object"
+		}
+	},
+	"info": {
+		"description": "API to retrieve Customer Billing details. Loosely-based, cut-down version for TMForum Open API Spec",
+		"title": "CustomerBill",
+		"version": "1.0",
+		"x-lastModified": "31 January 2021 10:27:38 am (Australian Eastern Daylight Time)"
+	},
+	"paths": {
+		"/customerBill": {
+			"get": {
+				"operationId": "getCustomerBill",
+				"parameters": [],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Success response",
+						"examples": {
+							"application/json": {
+								"account": {
+									"id": "A0815",
+									"name": "Prepaid Account"
+								},
+								"amountDue": {
+									"unit": "AUD",
+									"value": 20.95
+								},
+								"billCycle": {
+									"id": "BC-1234",
+									"referredType": "BillCycle"
+								},
+								"billDate": "2020-01-05T12:00:56.982Z",
+								"id": "780123456",
+								"paymentDueDate": "2020-01-15T00:00:00.000Z",
+								"remainingAmount": {
+									"unit": "AUD",
+									"value": 20.95
+								},
+								"type": "CustomerBill"
+							}
+						},
+						"schema": {
+							"$ref": "#/definitions/GetCustomerResponse"
+						}
+					}
+				}
+			}
+		}
+	},
+	"swagger": "2.0",
+	"host": "ap-southeast-2.integration.cloud.tibcoapps.com:443",
+	"schemes": [
+		"https"
+	],
+	"basePath": "/oizuqqf5nvlpwcukbvepjqkdcpfxnjma"
+}

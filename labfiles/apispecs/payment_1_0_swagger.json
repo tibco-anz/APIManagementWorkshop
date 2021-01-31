@@ -1,0 +1,185 @@
+{
+	"definitions": {
+		"CreatePaymentRequest": {
+			"properties": {
+				"account": {
+					"properties": {
+						"id": {
+							"default": "A0815",
+							"type": "string"
+						},
+						"name": {
+							"default": "Prepaid Account",
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"paymentItem": {
+					"properties": {
+						"BillId": {
+							"default": "1234",
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"paymentMethod": {
+					"properties": {
+						"id": {
+							"default": "15492654",
+							"type": "string"
+						},
+						"referredType": {
+							"default": "Voucher",
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"totalAmount": {
+					"properties": {
+						"unit": {
+							"default": "AUD",
+							"type": "string"
+						},
+						"value": {
+							"default": 24.95,
+							"type": "number"
+						}
+					},
+					"type": "object"
+				},
+				"type": {
+					"default": "Payment",
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"CreatePaymentResponse": {
+			"properties": {
+				"account": {
+					"properties": {
+						"id": {
+							"default": "A0815",
+							"type": "string"
+						},
+						"name": {
+							"default": "Prepaid Account",
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"id": {
+					"default": "12345",
+					"type": "string"
+				},
+				"paymentItem": {
+					"properties": {
+						"BillId": {
+							"default": "1234",
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"paymentMethod": {
+					"properties": {
+						"id": {
+							"default": "15492654",
+							"type": "string"
+						},
+						"referredType": {
+							"default": "Voucher",
+							"type": "string"
+						}
+					},
+					"type": "object"
+				},
+				"totalAmount": {
+					"properties": {
+						"unit": {
+							"default": "AUD",
+							"type": "string"
+						},
+						"value": {
+							"default": 24.95,
+							"type": "number"
+						}
+					},
+					"type": "object"
+				},
+				"type": {
+					"default": "Payment",
+					"type": "string"
+				}
+			},
+			"type": "object"
+		}
+	},
+	"info": {
+		"title": "Payment",
+		"version": "1.0",
+		"x-lastModified": "31 January 2021 10:34:03 am (Australian Eastern Daylight Time)"
+	},
+	"paths": {
+		"/payment": {
+			"post": {
+				"consumes": [
+					"application/json"
+				],
+				"operationId": "postPayment",
+				"parameters": [
+					{
+						"description": "",
+						"in": "body",
+						"name": "body",
+						"schema": {
+							"$ref": "#/definitions/CreatePaymentRequest"
+						}
+					}
+				],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Success response",
+						"examples": {
+							"application/json": {
+								"account": {
+									"id": "A0815",
+									"name": "Prepaid Account"
+								},
+								"id": "12345",
+								"paymentItem": {
+									"BillId": "1234"
+								},
+								"paymentMethod": {
+									"id": "15492654",
+									"referredType": "Voucher"
+								},
+								"totalAmount": {
+									"unit": "AUD",
+									"value": 24.95
+								},
+								"type": "Payment"
+							}
+						},
+						"schema": {
+							"$ref": "#/definitions/CreatePaymentResponse"
+						}
+					}
+				}
+			}
+		}
+	},
+	"swagger": "2.0",
+	"host": "ap-southeast-2.integration.cloud.tibcoapps.com:443",
+	"schemes": [
+		"https"
+	],
+	"basePath": "/4fk5f36jcsfy75oy42ifp3yayfxcre7c"
+}
