@@ -2,7 +2,9 @@
 
 This file contains text snippets you'll need during the workshop to save you typing. Be sure to use your favourite text editor - one that you will know will respect text characters, e.g. not turning valid double-quotes into fancy-looking (but non-legitimate) versions of themselves.
 
-## BillPaymentRequest
+
+## API Modelling
+### BillPaymentRequest
 
 ```
 {
@@ -31,6 +33,24 @@ This file contains text snippets you'll need during the workshop to save you typ
     },
     "paymentMethod": {
         "id": "15492654",
+        "referredType": "Voucher"
+    }
+}
+```
+
+## Orchestrating Services
+
+### BillPayment Test Body
+
+```
+{
+    "billId": "325366",
+    "totalAmount": {
+        "unit": "AUD",
+        "value": 29.95
+    },
+    "paymentMethod": {
+        "id": "73432381",
         "referredType": "Voucher"
     }
 }
