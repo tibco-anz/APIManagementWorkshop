@@ -1,6 +1,6 @@
 {
 	"definitions": {
-		"GetCustomerResponse": {
+		"GetCustomerRequest": {
 			"properties": {
 				"account": {
 					"properties": {
@@ -77,16 +77,24 @@
 		}
 	},
 	"info": {
-		"description": "API to retrieve Customer Billing details. Loosely-based, cut-down version for TMForum Open API Spec",
 		"title": "CustomerBill",
 		"version": "1.0",
-		"x-lastModified": "31 January 2021 10:27:38 am (Australian Eastern Daylight Time)"
+		"x-lastModified": "31 January 2021 10:38:45 am (Australian Eastern Daylight Time)"
 	},
 	"paths": {
-		"/customerBill": {
+		"/customerBill/{id}": {
 			"get": {
-				"operationId": "getCustomerBill",
-				"parameters": [],
+				"operationId": "getCustomerBill_id",
+				"parameters": [
+					{
+						"description": "",
+						"format": "",
+						"in": "path",
+						"name": "id",
+						"required": true,
+						"type": "string"
+					}
+				],
 				"produces": [
 					"application/json"
 				],
@@ -118,7 +126,7 @@
 							}
 						},
 						"schema": {
-							"$ref": "#/definitions/GetCustomerResponse"
+							"$ref": "#/definitions/GetCustomerRequest"
 						}
 					}
 				}
@@ -130,5 +138,5 @@
 	"schemes": [
 		"https"
 	],
-	"basePath": "/oizuqqf5nvlpwcukbvepjqkdcpfxnjma"
+	"basePath": "/d63jsgi6yoy6k5hzh3spy27xje4n25s7"
 }

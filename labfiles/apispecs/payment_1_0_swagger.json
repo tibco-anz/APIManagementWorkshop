@@ -49,10 +49,6 @@
 						}
 					},
 					"type": "object"
-				},
-				"type": {
-					"default": "Payment",
-					"type": "string"
 				}
 			},
 			"type": "object"
@@ -122,7 +118,7 @@
 	"info": {
 		"title": "Payment",
 		"version": "1.0",
-		"x-lastModified": "31 January 2021 10:34:03 am (Australian Eastern Daylight Time)"
+		"x-lastModified": "2021-01-30T23:34:35.000Z"
 	},
 	"paths": {
 		"/payment": {
