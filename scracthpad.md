@@ -24,6 +24,7 @@ api_key
 
 ### BillPaymentRequest
 
+Sample Request:
 ```
 {
     "billId": "12345",
@@ -38,8 +39,14 @@ api_key
 }
 ```
 
+Schema Name:
+```
+BillPaymentRequest
+```
+
 ## BillPaymentResponse
 
+Sample Reponse:
 ```
 {
     "id": "323553",
@@ -54,6 +61,11 @@ api_key
         "referredType": "Voucher"
     }
 }
+```
+
+Schema Name:
+```
+BillPaymentResponse
 ```
 
 ## Orchestrating Services
