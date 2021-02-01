@@ -4,6 +4,24 @@ This file contains text snippets you'll need during the workshop to save you typ
 
 
 ## API Modelling
+
+### Naming
+
+API: 
+```
+BillPayment
+```
+
+Resource:
+```
+/billPayment
+```
+
+API Key:
+```
+api_key
+```
+
 ### BillPaymentRequest
 
 ```
@@ -55,3 +73,8 @@ This file contains text snippets you'll need during the workshop to save you typ
     }
 }
 ```
+
+## Exposing an API
+
+### TIBCO Cloud Mashery URL
+https://account.cloud.tibco.com/launchtenant/MASHERY
