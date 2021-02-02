@@ -44,7 +44,7 @@ Schema Name:
 BillPaymentRequest
 ```
 
-## BillPaymentResponse
+### BillPaymentResponse
 
 Sample Reponse:
 ```
@@ -69,6 +69,16 @@ BillPaymentResponse
 ```
 
 ## Orchestrating Services
+
+### Naming
+
+```
+GetBillDetails
+```
+
+```
+DoPayment
+```
 
 ### BillPayment Test Body
 
