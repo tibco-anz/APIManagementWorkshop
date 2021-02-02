@@ -72,6 +72,9 @@ BillPaymentResponse
 
 ### Naming
 
+App:
+BillPayment
+
 ```
 GetBillDetails
 ```
