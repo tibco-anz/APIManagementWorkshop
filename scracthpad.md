@@ -50,16 +50,7 @@ Sample Reponse:
 ```
 {
     "id": "323553",
-    "paymentDate": "2020-01-08T12:06:38.230Z",
-    "billId": "12345",
-    "totalAmount": {
-        "unit": "AUD",
-        "value": 24.95
-    },
-    "paymentMethod": {
-        "id": "15492654",
-        "referredType": "Voucher"
-    }
+    "paymentDate": "2020-01-08T12:06:38.230Z"
 }
 ```
 
@@ -67,6 +58,11 @@ Schema Name:
 ```
 BillPaymentResponse
 ```
+
+## Exposing an API
+
+### TIBCO Cloud Mashery URL
+https://account.cloud.tibco.com/launchtenant/MASHERY
 
 ## Orchestrating Services
 
@@ -98,8 +94,3 @@ DoPayment
     }
 }
 ```
-
-## Exposing an API
-
-### TIBCO Cloud Mashery URL
-https://account.cloud.tibco.com/launchtenant/MASHERY
