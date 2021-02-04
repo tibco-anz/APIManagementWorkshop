@@ -64,6 +64,18 @@ BillPaymentResponse
 ### TIBCO Cloud Mashery URL
 https://account.cloud.tibco.com/launchtenant/MASHERY
 
+### Package and Plan
+
+Plan Name:
+```
+BillPayment
+```
+
+Plan Name:
+```
+BillPaymentInternal
+```
+
 ## Orchestrating Services
 
 ### Naming
