@@ -76,6 +76,11 @@ Plan Name:
 BillPaymentInternal
 ```
 
+## Registering for an API
+
+Application Name:
+BillPayment
+
 ## Orchestrating Services
 
 ### Naming
